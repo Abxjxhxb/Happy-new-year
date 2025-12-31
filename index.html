@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Cairo', sans-serif;
+          background-color: #0d0121;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+      }
+
+      .card {
+          background-color: white;
+          width: 90%;
+          max-width: 380px;
+          border-radius: 50px;
+          padding: 30px 20px;
+          text-align: center;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+          position: relative;
+      }
+
+      .dots-container {
+          display: flex;
+          justify-content: center;
+          gap: 8px;
+          margin-bottom: 20px;
+      }
+      .dot { width: 12px; height: 12px; border-radius: 50%; }
+      .red { background-color: #ff3b30; }
+      .green { background-color: #4cd964; }
+      .blue { background-color: #007aff; }
+      .yellow { background-color: #ffcc00; }
+      .purple { background-color: #af52de; }
+
+      .year-btn {
+          background: linear-gradient(to right, #ff0080, #7928ca);
+          color: white;
+          border: none;
+          padding: 10px 40px;
+          border-radius: 20px;
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 10px;
+      }
+
+      .christmas-title {
+          font-size: 55px;
+          color: #ff453a;
+          margin: 10px 0;
+          font-weight: bold;
+      }
+
+      input {
+          width: 85%;
+          padding: 15px;
+          margin: 20px 0;
+          border: 2px solid #7928ca;
+          border-radius: 30px;
+          text-align: center;
+          font-size: 16px;
+          color: #666;
+      }
+
+      .main-btn {
+          background: linear-gradient(to right, #ff2d55, #af52de);
+          color: white;
+          border: none;
+          width: 90%;
+          padding: 15px;
+          border-radius: 40px;
+          font-size: 20px;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 10px;
+      }
+
+      .decorated-names {
+          font-family: 'Aref Ruqaa', serif;
+          font-size: 50px;
+          color: #7928ca;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+          margin: 20px 0;
+      }
+
+      .heart-container {
+          position: relative;
+          font-size: 45px;
+          animation: pulse 1.5s infinite;
+      }
+      .arrow { position: absolute; font-size: 22px; top: 10px; }
+      .arrow-l { left: -30px; transform: rotate(-15deg); }
+      .arrow-r { right: -30px; transform: rotate(15deg); }
+
+      .page { display: none; }
+      .active { display: block; }
+
+      @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+      
+      p { color: #444; line-height: 1.7; font-size: 18px; margin: 15px 0; }
+  </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="dots-container">
+            <div class="dot red"></div>
+            <div class="dot green"></div>
+            <div class="dot blue"></div>
+            <div class="dot yellow"></div>
+            <div class="dot purple"></div>
+        </div>
+
+        <div id="step1" class="page active">
+            <button class="year-btn">2026</button>
+            <div style="font-size: 70px;">🎄</div>
+            <h1 class="christmas-title">Christmas</h1>
+            <input type="text" id="password" placeholder="اكتبي تاريخ حبناااا ي امورتيييي 🫣💘">
+            <button class="main-btn" onclick="checkPassword()">ادخل الباسورد ✨</button>
+            <div id="errorMsg" style="color:red; margin-top:10px; display:none;">الباسورد غلط يشطورتييي حاولي تاني 💔</div>
+            <div style="font-size: 30px; margin-top: 20px;">🎅 💖 🎁 💖 🎄</div>
+        </div>
+
+        <div id="step2" class="page">
+            <div style="font-size: 50px;">💌</div>
+            <h2 style="color: #7928ca;">
+           هابي مسدج لحبيبت قلبيييي 🫣💘💘</h2>
+            <p>
+                2025 خلصت وبدانا سنه جديده (2026)وحبي ليكي بيزيد كل يوم عن اليوم الي قبله💝💗 واحلي حاجه حصلتلي في 2025 اني قابلتك واحلي حاجه واول حاجه حصلت في 2026 اننا مع بعض يروح قلبييي💖🌟 وباذن الله نفضل مكملين مع بعض سنينا الجيه كلها وتفضلي حبيبتي وسري وتبقي ام عيالي ودنيتي الجيه 🎀💍🏠
+                <p>
+                (بحبكككك💝💍)
+            </p>
+            <button class="main-btn" onclick="showPage('step3')">لسه فيه تاني؟ 😂❤️</button>
+        </div>
+
+        <div id="step3" class="page">
+            <h2 style="color: #555;">بداية2026 وانا معي ست البنات🎀🫅 </h2>
+            <div class="decorated-names">
+                <span>احمد🤴</span>
+                <div class="heart-container">
+                    💘
+                    <span class="arrow arrow-l"></span>
+                    <span class="arrow arrow-r"></span>
+                </div>
+                <span>ريم🫅</span>
+            </div>
+            <p style="font-size: 16px; color: #888;"> وبحققق 😂 بعشقق امككك 😂💝💘</p>
+            <button class="main-btn" style="background: #333;" onclick="location.reload()">من الأول؟ 🔄</button>
+        </div>
+    </div>
+
+    <script>
+        function showPage(id) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+
+        function checkPassword() {
+            const correctPassword = "9/9/2025"; // ✨ الباسورد اللي انت عايزه
+            const userPassword = document.getElementById("password").value.trim();
+            const error = document.getElementById("errorMsg");
+
+            if (userPassword === correctPassword) {
+                error.style.display = "none";
+                showPage('step2');
+            } else {
+                error.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
